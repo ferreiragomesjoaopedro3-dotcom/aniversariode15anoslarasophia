@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Convite Lara Sophia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Remove barras de rolagem */
+            background-color: white; 
+        }
+
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            /* A mágica do "sem zoom": contain faz a imagem caber inteira na tela */
+            background-image: url('WhatsApp Image 2026-03-03 at 13.31.29.jpeg');
+            background-size: contain; 
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Camada invisível para os botões */
+        .botao {
+            position: absolute;
+            cursor: pointer;
+            /* background: rgba(255, 0, 0, 0.3); */ /* Remova o comentário para ver onde os botões estão e ajustar se precisar */
+        }
+
+        /* Localização dos botões baseada na posição da imagem do convite */
+        /* Ajuste as porcentagens (top/left/width/height) se não ficarem exatamente em cima dos ícones */
+        
+        #btn-localizacao {
+            bottom: 12%; 
+            left: 36%;
+            width: 28%;
+            height: 15%;
+        }
+
+        #btn-presente {
+            bottom: 12%;
+            left: 68%;
+            width: 28%;
+            height: 15%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="https://maps.app.goo.gl/YHVwUfdU89qD3V939" target="_blank">
+            <div id="btn-localizacao" class="botao"></div>
+        </a>
+
+        <a href="file_00000000ec5871f5a58e517e9999fffb.png" target="_blank">
+            <div id="btn-presente" class="botao"></div>
+        </a>
+    </div>
+
+</body>
+</html>
